@@ -9,3 +9,13 @@ The three parameters per letter:
   * `size` : radius of the second circle
   * `offsetx` : x offset of the second circle relative to the first one
   * `offsety` : y offset of the second circle relative to the first one
+
+27/03 - Added 2 more parameters to get use to this concept:
+ * `length` : y variable for rectangle
+ * `radius` : radius of rectangle corners
+
+Tried to add a colour parameter but the letters only show up as different shades of white:
+
+![colour mddn242](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/805ed967-7088-4127-9da0-56144fcfd904)
+
+![Screenshot 2024-03-27 234802](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/e864ae86-ceec-4c6d-bfc7-9970535bb2e2)
