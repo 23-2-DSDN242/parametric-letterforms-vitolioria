@@ -1,3 +1,4 @@
+
 /*******
  * define this "sliderInfo" variable
  * have an entry for each slider you want
@@ -5,9 +6,20 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["size",       0, 100],
-  ["offsetx",  -30,  30],
-  ["offsety", -100, 100]
+  ["RectWidth1", 0, 100],
+  ["RectLength1", 0, 150],
+  ["RectX1",  -100,  0],
+  ["RectY1", -150, 0],
+  ["RectWidth2", 0, 150],
+  ["RectLength2",0, 150],
+  ["RectX2",  -50,  50],
+  ["RectY2", -100, 50],
+  ["CircleX1", -100, 150],
+  ["CircleY1", -100, 150],
+  ["CircleWidth1", -100, 150],
+  ["CircleLength1", -100, 150],
+  ["RectRotation", 0, 360]
+
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
@@ -113,3 +125,4 @@ function keyTyped() {
     console.log(json);
   }
 }
+

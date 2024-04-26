@@ -5,24 +5,49 @@ const alphabet = {
     "offsety": 0
   },
   "A": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "RectWidth1": 35,
+    "RectLength1": 114,
+    "RectX1": -35,
+    "RectY1": -75,
+    "RectWidth2": 9,
+    "RectLength2": 135,
+    "RectX2": -33,
+    "RectY2": -97,
+    "CircleX1": 50,
+    "CircleY1": 107.5,
+    "CircleWidth1": 85,
+    "CircleLength1": -12.5,
+    "RectRotation": 342
   },
   "B": {
-    "size": 75,
-    "offsetx": 0,
-    "offsety": -70
+    "RectWidth1": 47,
+    "RectLength1": 28.000000000000004,
+    "RectX1": -38,
+    "RectY1": -81,
+    "RectWidth2": 75,
+    "RectLength2": 61.49999999999999,
+    "RectX2": -10,
+    "RectY2": -68.5
   },
   "C": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "RectWidth1": 47,
+    "RectLength1": 100,
+    "RectX1": -38,
+    "RectY1": -148.5,
+    "RectWidth2": 45,
+    "RectLength2": 61.49999999999999,
+    "RectX2": -10,
+    "RectY2": -68.5
   },
   "D": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "RectWidth1": 50,
+    "RectLength1": 50,
+    "RectX1": -50,
+    "RectY1": -75,
+    "RectWidth2": 75,
+    "RectLength2": 75,
+    "RectX2": 0,
+    "RectY2": -25
   },
   "E": {
     "size": 50,
