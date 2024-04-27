@@ -6,25 +6,46 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  //["RectWidth1", 0, 100],
-  ["LineOnex1",0,200],
-  ["LineOnex2",0,200],
-  ["LineOney1",0,200],
-  ["LineOney2",0,200],
-  ["LineTwox1",0,200],
-  ["LineTwox2",0,200],
-  ["LineTwoy1",0,200],
-  ["LineTwoy2",0,200],
-  ["LineThreex1",0,200],
-  ["LineThreex2",0,200],
-  ["LineThreey1",0,200],
-  ["LineThreey2",0,200],
-  ["arcStart",0,400],
-  ["arcEnd",0,400],
-  ["arcSize",0,200],
-  ["arcAmount",0,100],
-  ["pencilY",0,100],
-  ["pencilRotation",-360,360],
+  ["RectX", 0, 200],
+  ["RectY", -200, 200],
+  ["RectWidth", 0, 200],
+  ["RectLength", -200, 200],
+
+  ["ArcX", -100, 100],
+  ["ArcY", -100, 200],
+  ["ArcWidth", 0, 100],
+  ["ArcLength", 0, 100],
+  ["ArcStart", 0, 360],
+  ["ArcEnd", 0, 360],
+
+  ["TriX1",0,200],
+  ["TriY1",0,200],
+  ["TriX2",0,200],
+  ["TriY2",0,200],
+  ["TriX3",0,200],
+  ["TriY3",0,200]
+
+
+
+
+  // ["LineOnex1",0,200],
+  // ["LineOnex2",0,200],
+  // ["LineOney1",0,200],
+  // ["LineOney2",0,200],
+  // ["LineTwox1",0,200],
+  // ["LineTwox2",0,200],
+  // ["LineTwoy1",0,200],
+  // ["LineTwoy2",0,200],
+  // ["LineThreex1",0,200],
+  // ["LineThreex2",0,200],
+  // ["LineThreey1",0,200],
+  // ["LineThreey2",0,200],
+  // ["arcStart",0,400],
+  // ["arcEnd",0,400],
+  // ["arcSize",0,200],
+  // ["arcAmount",0,100],
+  // ["pencilY",0,100],
+  // ["pencilRotation",-360,360],
   
   
   // ["triWidth1", 0, 150],
