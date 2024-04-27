@@ -6,19 +6,32 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["RectWidth1", 0, 100],
-  ["RectLength1", 0, 150],
-  ["RectX1",  -100,  0],
-  ["RectY1", -150, 0],
-  ["RectWidth2", 0, 150],
-  ["RectLength2",0, 150],
-  ["RectX2",  -50,  50],
-  ["RectY2", -100, 50],
-  ["CircleX1", -100, 150],
-  ["CircleY1", -100, 150],
-  ["CircleWidth1", -100, 150],
-  ["CircleLength1", -100, 150],
-  ["RectRotation", 0, 360]
+  //["RectWidth1", 0, 100],
+  ["LineOnex1",0,200],
+  ["LineOnex2",0,200],
+  ["LineOney1",0,200],
+  ["LineOney2",0,200],
+  ["LineTwox1",0,200],
+  ["LineTwox2",0,200],
+  ["LineTwoy1",0,200],
+  ["LineTwoy2",0,200],
+  ["LineThreex1",0,200],
+  ["LineThreex2",0,200],
+  ["LineThreey1",0,200],
+  ["LineThreey2",0,200],
+  ["arcStart",0,400],
+  ["arcEnd",0,400],
+  ["arcSize",0,200],
+  ["arcAmount",0,100],
+  ["pencilY",0,100],
+  ["pencilRotation",-360,360],
+  
+  
+  // ["triWidth1", 0, 150],
+  // ["triLength1",0, 150],
+  // ["triX1",  -50,  50],
+  // ["triY1", -100, 50],
+ 
 
 ];
 

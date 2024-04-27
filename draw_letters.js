@@ -1,5 +1,5 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#ffda96";
+var systemBackgroundColor = "#fff6e6";
 var systemLineColor = "#4287f5";
 var systemBoxColor = "#C73869";
 
@@ -7,8 +7,8 @@ var systemBoxColor = "#C73869";
 const PurpleBlue  = "#4287f5";
 const White  = "#FFF";
 const SecondaryColour  = "#ffadfb";
-const green = "#a1cc6c";
-const darkGreen = "#3e4536";
+const yellow = "#ffcd4f";
+const PencilColour = "#6e6e6e";
 
 /*
  * Draw the letter given the letterData
@@ -18,70 +18,84 @@ const darkGreen = "#3e4536";
  * from (0,0) to (100, 200)
  */
 function drawLetter(letterData) {
-  // color/stroke setup
-  stroke(PurpleBlue);
+  angleMode(DEGREES);
+ 
+  //first line parameters
+  let LineOnex1 = letterData["LineOnex1"];
+  let LineOnex2 = letterData["LineOnex2"];
+  let LineOney1 = letterData["LineOney1"];
+  let LineOney2 = letterData["LineOney2"];
+
+  //second line parameters
+  let LineTwox1 = letterData["LineTwox1"];
+  let LineTwox2 = letterData["LineTwox2"];
+  let LineTwoy1 = letterData["LineTwoy1"];
+  let LineTwoy2 = letterData["LineTwoy2"];
+
+ //third line parameters
+  let LineThreex1 = letterData["LineThreex1"];
+  let LineThreex2 = letterData["LineThreex2"];
+  let LineThreey1 = letterData["LineThreey1"];
+  let LineThreey2 = letterData["LineThreey2"];
+
+ //Pencil parameters
+ let pencilY = letterData["pencilY"];
+ let pencilRotation = letterData["pencilRotation"];
+
+ //arc parameters
+ let arcStart = letterData["arcStart"];
+ let arcEnd = letterData["arcEnd"];
+ let arcSize = letterData["arcSize"];
+ let arcAmount = letterData["arcAmount"];
+
+  stroke(PencilColour);
   strokeWeight(4);
-
-  // determine parameters for First Rectangle 
-  let RectWidth1 = letterData["RectWidth1"];
-  let RectLength1 = letterData["RectLength1"];
-  let RectX1 = 50  + letterData["RectX1"];
-  let RectY1 = 150 + letterData["RectY1"];
-
-  // determine parameters for Second Rectangle 
-  let RectWidth2 = letterData["RectWidth2"];
-  let RectLength2 = letterData["RectLength2"];
-  let RectX2 = 50  + letterData["RectX2"];
-  let RectY2 = 150 + letterData["RectY2"];
-  let RectRotation = letterData["RectRotation"];
-
-  //determine circle parameters
-  let CircleX1 = letterData["CircleX1"];
-  let CircleY1 = letterData["CircleY1"];
-  let CircleWidth1 = letterData["CircleWidth1"];
-  let CircleLength1 = letterData["CircleLength1"];
- 
-  
-  // draw shapes
-  fill(PurpleBlue);
-  //ellipse(50, 150, 75, 75);
-  fill(PurpleBlue);
-  rect(RectX1, RectY1, RectWidth1, RectLength1);
-  fill(SecondaryColour)
-  rect(RectX1, RectY1, RectWidth1-15, RectLength1);
-
+  rect(LineOnex1, LineOnex2, LineOney1, LineOney2);
+  line(LineTwox1, LineTwox2, LineTwoy1, LineTwoy2);
+  line(LineThreex1, LineThreex2, LineThreey1, LineThreey2);
 
   push()
-  translate(5,5);
-  rotate(RectRotation);
-  stroke(darkGreen);
-  fill(green);
-  //rect(15+ RectX1, 15+ RectY1, RectWidth1-15, RectLength1-15);
-  rect(RectX2, RectY2, RectWidth2, RectLength2);
-  pop()
-  
-  push()
- 
-  stroke(SecondaryColour);
-  fill(darkGreen);
-  ellipse(CircleX1,CircleY1+6,CircleWidth1,CircleLength1);
-  pop();
- 
-  
- // beginShape();
-
-  // Add the first control point.
-  // curveVertex(32, 91);
-
-  // // Add the anchor points.
-  // curveVertex(21, 17);
-  // curveVertex(RectLength1, 19);
-
-  // // Add the second control point.
-  // curveVertex(84, RectX1);
-
-  // // Stop drawing the shape.
-  // endShape();
+  translate(100,10);
+  rotate(90);
+  noFill();
+  if(arcAmount <= 50){
+    arc(75, 50, 100, arcSize, arcStart, arcEnd);
+   } else{
+    arc(75, 100, arcSize, 100, arcStart, arcEnd);
+    arc(75, 50, 100, arcSize, arcStart, arcEnd);
+   }
+   pop()
+//if parameters hit a certain value, the pencil area will change
+  // if(LineOnex1 <= 50){
+    push()
+    beginShape()
+    translate(10,2),
+    rotate(pencilRotation);
+    translate(10,2),
+    
+    noStroke()
+    fill("#f7e8c1");
+    triangle(10, 47, 18, 20, 25, 47);
+    fill(PencilColour);
+    triangle(14.9, 30, 18, 20, 20.7, 30);
+    noStroke()
+    fill(yellow);
+    rect(10,50,15,107,0,0,2,2);
+    fill(SecondaryColour);
+    rect(10,150,15,17,0,0,2,2);
+    fill(PencilColour);
+    rect(10,150,15,5);
+    noStroke()
+    fill(yellow);
+    rect(10, 45, 4.6, 10, 20, 15, 10, 5);
+    rect(16, 43, 4.6, 10, 20, 15, 10, 5);
+    rect(20.5, 45, 4.6, 50, 5, 5, 10, 5);
+    stroke(PencilColour);
+    strokeWeight(1.5);
+    line(15,46,15,150);
+    line(21,46,21,150);
+    endShape()
+    pop()
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
@@ -101,7 +115,7 @@ function interpolate_letter(percent, oldObj, newObj) {
 var swapWords = [
   "ABBAABBA",
   "CAB?CAB?",
-  "BAAAAAAA"
+  "BAEKFAEK"
 ]
 
 

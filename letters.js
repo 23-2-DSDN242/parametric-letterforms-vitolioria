@@ -5,19 +5,24 @@ const alphabet = {
     "offsety": 0
   },
   "A": {
-    "RectWidth1": 35,
-    "RectLength1": 114,
-    "RectX1": -35,
-    "RectY1": -75,
-    "RectWidth2": 9,
-    "RectLength2": 135,
-    "RectX2": -33,
-    "RectY2": -97,
-    "CircleX1": 50,
-    "CircleY1": 107.5,
-    "CircleWidth1": 85,
-    "CircleLength1": -12.5,
-    "RectRotation": 342
+    "LineOnex1": 26,
+    "LineOnex2": 30,
+    "LineOney1": 92,
+    "LineOney2": 162,
+    "LineTwox1": 20,
+    "LineTwox2": 100,
+    "LineTwoy1": 60,
+    "LineTwoy2": 100,
+    "LineThreex1": 40,
+    "LineThreex2": 100,
+    "LineThreey1": 74,
+    "LineThreey2": 100,
+    "arcStart": 200,
+    "arcEnd": 200,
+    "arcSize": 100,
+    "arcAmount": 50,
+    "pencilSize": 50,
+    "pencilRotation": 7.199999999999989
   },
   "B": {
     "RectWidth1": 47,
@@ -50,14 +55,38 @@ const alphabet = {
     "RectY2": -25
   },
   "E": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "LineOnex1": 42,
+    "LineOnex2": 100,
+    "LineOney1": 100,
+    "LineOney2": 100,
+    "LineTwox1": 38,
+    "LineTwox2": 30,
+    "LineTwoy1": 96,
+    "LineTwoy2": 30,
+    "LineThreex1": 42,
+    "LineThreex2": 166,
+    "LineThreey1": 98,
+    "LineThreey2": 166,
+    "arcStart": 200,
+    "arcEnd": 200,
+    "arcSize": 100,
+    "arcAmount": 50,
+    "pencilSize": 50,
+    "pencilRotation": 0
   },
   "F": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "LineOnex1": 62,
+    "LineOnex2": 110.00000000000001,
+    "LineOney1": 10,
+    "LineOney2": 110.00000000000001,
+    "LineTwox1": 10,
+    "LineTwox2": 76,
+    "LineTwoy1": 80,
+    "LineTwoy2": 76,
+    "LineThreex1": 100,
+    "LineThreex2": 100,
+    "LineThreey1": 100,
+    "LineThreey2": 100
   },
   "G": {
     "size": 50,
@@ -65,9 +94,18 @@ const alphabet = {
     "offsety": 0
   },
   "H": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "LineOnex1": 82,
+    "LineOnex2": 110.00000000000001,
+    "LineOney1": 12,
+    "LineOney2": 110.00000000000001,
+    "LineTwox1": 84,
+    "LineTwox2": 172,
+    "LineTwoy1": 84,
+    "LineTwoy2": 80,
+    "LineThreex1": 100,
+    "LineThreex2": 100,
+    "LineThreey1": 100,
+    "LineThreey2": 100
   },
   "I": {
     "size": 50,
@@ -80,14 +118,32 @@ const alphabet = {
     "offsety": 0
   },
   "K": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "LineOnex1": 68,
+    "LineOnex2": 84,
+    "LineOney1": 2,
+    "LineOney2": 128,
+    "LineTwox1": 14.000000000000002,
+    "LineTwox2": 124,
+    "LineTwoy1": 68,
+    "LineTwoy2": 164,
+    "LineThreex1": 100,
+    "LineThreex2": 100,
+    "LineThreey1": 100,
+    "LineThreey2": 100
   },
   "L": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "LineOnex1": 98,
+    "LineOnex2": 162,
+    "LineOney1": 14.000000000000002,
+    "LineOney2": 162,
+    "LineTwox1": 84,
+    "LineTwox2": 80,
+    "LineTwoy1": 84,
+    "LineTwoy2": 80,
+    "LineThreex1": 100,
+    "LineThreex2": 100,
+    "LineThreey1": 100,
+    "LineThreey2": 100
   },
   "M": {
     "size": 50,
