@@ -21,10 +21,10 @@ function drawLetter(letterData) {
 
  
   //rect parameters
-  let RectOneX = letterData["RectX"];
-  let RectOneY = letterData["RectY"];
-  let RectOneWidth = letterData["RectWidth"];
-  let RectOneLength = letterData["RectLength"];
+  let RectX = letterData["RectX"];
+  let RectY = letterData["RectY"];
+  let RectWidth = letterData["RectWidth"];
+  let RectLength = letterData["RectLength"];
 
   //arc parameters
   let ArcX = letterData["ArcX"];
@@ -45,10 +45,10 @@ function drawLetter(letterData) {
 
   noStroke();
   fill(66,135,245,75);
-    rect(RectOneX,RectOneY,RectOneWidth,RectOneLength);
+    rect(RectX,RectY,RectWidth,RectLength);
   
   fill(RectColour1)
-   rect(RectOneX+5,RectOneY+5,RectOneWidth,RectOneLength);
+   rect(RectX+5,RectY+5,RectWidth,RectLength);
  
    noStroke();
    fill(68, 92, 71, 75);
@@ -154,20 +154,30 @@ fill(68, 92, 71, 75);
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
   new_letter["RectX"]    = map(percent, 0, 100, oldObj["RectX"], newObj["RectX"]);
-  new_letter["RectLength1"] = map(percent, 0, 100, oldObj["RectLength1"], newObj["RectLength1"]);
-  new_letter["RectX1"] = map(percent, 0, 100, oldObj["RectX1"], newObj["RectX1"]);
-  new_letter["RectY1"]    = map(percent, 0, 100, oldObj["RectY1"], newObj["RectY1"]);
-  new_letter["RectWidth2"]    = map(percent, 0, 100, oldObj["RectWidth2"], newObj["RectWidth2"]);
-  new_letter["RectLength1"] = map(percent, 0, 100, oldObj["RectLength2"], newObj["RectLength2"]);
-  new_letter["RectX2"] = map(percent, 0, 100, oldObj["RectX2"], newObj["RectX2"]);
-  new_letter["RectY2"]    = map(percent, 0, 100, oldObj["RectY2"], newObj["RectY2"]);
+  new_letter["RectY"] = map(percent, 0, 100, oldObj["RectY"], newObj["RectY"]);
+  new_letter["RectWidth"] = map(percent, 0, 100, oldObj["RectWidth"], newObj["RectWidth"]);
+  new_letter["RectLength"]    = map(percent, 0, 100, oldObj["RectLength"], newObj["RectLength"]);
+  
+  new_letter["ArcX"]    = map(percent, 0, 100, oldObj["ArcX"], newObj["ArcX"]);
+  new_letter["ArcY"] = map(percent, 0, 100, oldObj["ArcY"], newObj["ArcY"]);
+  new_letter["ArcWidth"] = map(percent, 0, 100, oldObj["ArcWidth"], newObj["ArcWidth"]);
+  new_letter["ArcLength"]    = map(percent, 0, 100, oldObj["ArcLength"], newObj["ArcLength"]);
+  new_letter["ArcStart"]    = map(percent, 0, 100, oldObj["ArcStart"], newObj["ArcStart"]);
+  new_letter["ArcEnd"] = map(percent, 0, 100, oldObj["ArcEnd"], newObj["ArcEnd"]);
+
+  new_letter["TriX1"] = map(percent, 0, 100, oldObj["TriX1"], newObj["TriX1"]);
+  new_letter["TriY1"] = map(percent, 0, 100, oldObj["TriY1"], newObj["TriY1"]);
+  new_letter["TriX2"] = map(percent, 0, 100, oldObj["TriX2"], newObj["TriX2"]);
+  new_letter["TriY2"] = map(percent, 0, 100, oldObj["TriY2"], newObj["TriY2"]);
+  new_letter["TriX3"] = map(percent, 0, 100, oldObj["TriX3"], newObj["TriX3"]);
+  new_letter["TriY3"] = map(percent, 0, 100, oldObj["TriY3"], newObj["TriY3"]);
  
   return new_letter;
 }
 
 var swapWords = [
-  "ABBAABBA",
-  "CAB?CAB?",
+  "PICASSO?",
+  "ARTISTIC",
   "BAEKFAEK"
 ]
 
