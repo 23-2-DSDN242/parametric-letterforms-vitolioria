@@ -1,6 +1,6 @@
 /* these are optional special variables which will change the system */
 var systemBackgroundColor = "#07004d";
-var systemLineColor = "#4287f5";
+var systemLineColor = "#07004d";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
@@ -43,7 +43,12 @@ function drawLetter(letterData) {
   let triangleX3 = letterData["TriX3"];
   let triangleY3 = letterData["TriY3"];
 
-//----------------------Draw Shapes
+  let colourChange = letterData["colourChange"];
+
+//----------------------Draw Shapes and colours
+
+
+
 
 //draw rectangle
   noStroke();
@@ -80,6 +85,118 @@ function drawLetter(letterData) {
   triangle(triangleX1+5,triangleY1+5,triangleX2+5,triangleY2+5,triangleX3+5,triangleY3+5);
   
 }
+
+
+
+
+// if(colourChange <= 0.99){
+
+
+//   //draw rectangle
+//     noStroke();
+//     fill(66,135,245,75);
+//     rect(RectX,RectY,RectWidth,RectLength);
+    
+//   //MAIN RECTANGLE
+//     fill(RectColour1)
+//     rect(RectX+5,RectY+5,RectWidth,RectLength);
+   
+  
+  
+//   //draw arc
+//     stroke(252, 224, 144);
+//     strokeWeight(10);
+//     noFill();
+//     arc(ArcX,ArcY,ArcWidth,ArcLength,ArcStart,ArcEnd);
+  
+//   //MAIN ARC
+//     stroke(StrokeColour);
+//     strokeWeight(10);
+//     noFill();
+//     arc(ArcX+5,ArcY+5,ArcWidth,ArcLength,ArcStart,ArcEnd);
+  
+//   //draw triangle
+//     noStroke();
+//     fill(68, 92, 71, 75);
+//     triangle(triangleX1,triangleY1,triangleX2,triangleY2,triangleX3,triangleY3);
+  
+//   //MAIN TRIANGLE
+//     fill(TriangleColour1);
+//     triangle(triangleX1+5,triangleY1+5,triangleX2+5,triangleY2+5,triangleX3+5,triangleY3+5);
+//   } 
+  
+  
+  
+//     else if( colourChange<= 1.99){
+//       noStroke();
+//       fill(66,135,245,75);
+//       rect(RectX,RectY,RectWidth,RectLength);
+      
+//     //MAIN RECTANGLE
+//       fill(Colour)
+//       rect(RectX+5,RectY+5,RectWidth,RectLength);
+     
+    
+    
+//     //draw arc
+//       stroke(colour4);
+//       strokeWeight(10);
+//       noFill();
+//       arc(ArcX,ArcY,ArcWidth,ArcLength,ArcStart,ArcEnd);
+    
+//     //MAIN ARC
+//       stroke(Colour2);
+//       strokeWeight(10);
+//       noFill();
+//       arc(ArcX+5,ArcY+5,ArcWidth,ArcLength,ArcStart,ArcEnd);
+    
+//     //draw triangle
+//       noStroke();
+//       fill(68, 92, 71, 75);
+//       triangle(triangleX1,triangleY1,triangleX2,triangleY2,triangleX3,triangleY3);
+    
+//     //MAIN TRIANGLE
+//       noStroke();
+//       fill(Colour3);
+//       triangle(triangleX1+5,triangleY1+5,triangleX2+5,triangleY2+5,triangleX3+5,triangleY3+5);
+  
+  
+//     }else if (colourChange ==3){
+//         noStroke();
+//         fill(66,135,245,75);
+//         rect(RectX,RectY,RectWidth,RectLength);
+        
+//       //MAIN RECTANGLE
+//         fill(TriangleColour1)
+//         rect(RectX+5,RectY+5,RectWidth,RectLength);
+       
+      
+      
+//       //draw arc
+//         stroke(colour4);
+//         strokeWeight(10);
+//         noFill();
+//         arc(ArcX,ArcY,ArcWidth,ArcLength,ArcStart,ArcEnd);
+      
+//       //MAIN ARC
+//         stroke(RectColour1);
+//         strokeWeight(10);
+//         noFill();
+//         arc(ArcX+5,ArcY+5,ArcWidth,ArcLength,ArcStart,ArcEnd);
+      
+//       //draw triangle
+//         noStroke();
+//         fill(68, 92, 71, 75);
+//         triangle(triangleX1,triangleY1,triangleX2,triangleY2,triangleX3,triangleY3);
+      
+//       //MAIN TRIANGLE
+//         noStroke();
+//         fill(Colour1);
+//         triangle(triangleX1+5,triangleY1+5,triangleX2+5,triangleY2+5,triangleX3+5,triangleY3+5);
+    
+    
+  
+  
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};

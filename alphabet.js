@@ -33,7 +33,7 @@ function setup () {
 }
 
 function mouseClicked() {
-  debugBox = !debugBox;
+  debugBox = false;
   // console.log("debugBox is now: " + debugBox);
   redraw();
 }

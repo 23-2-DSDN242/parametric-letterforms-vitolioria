@@ -23,7 +23,11 @@ const sliderInfo = [
   ["TriX2",0,200],
   ["TriY2",0,200],
   ["TriX3",0,200],
-  ["TriY3",0,200]
+  ["TriY3",0,200],
+
+  
+  // ["colourChange",0,3],
+  // ["shapeOrder",0,2],
 
 
 
