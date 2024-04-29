@@ -360,11 +360,11 @@ const alphabet = {
     "TriY3": 140
   },
   "T": {
-    "RectX": 41,
-    "RectY": 76,
+    "RectX": 31,
+    "RectY": 26,
     "RectWidth": 32,
-    "RectLength": 80,
-    "ArcX": 60,
+    "RectLength": 120,
+    "ArcX": 50,
     "ArcY": 113,
     "ArcWidth": 25,
     "ArcLength": 22,
@@ -372,9 +372,9 @@ const alphabet = {
     "ArcEnd": 180,
     "TriX1": 4,
     "TriY1": 56.00000000000001,
-    "TriX2": 88,
+    "TriX2": 100,
     "TriY2": 74,
-    "TriX3": 62,
+    "TriX3": 47,
     "TriY3": 84
   },
   "U": {

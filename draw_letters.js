@@ -4,6 +4,7 @@ var systemLineColor = "#4287f5";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
+//colours that will be used 
 const StrokeColour = "#4287f5";
 const RectColour1 = "#fe5e41";
 const ArcColour1 = "#ddffd9";
@@ -40,115 +41,44 @@ function drawLetter(letterData) {
   let triangleX2 = letterData["TriX2"];
   let triangleY2 = letterData["TriY2"];
   let triangleX3 = letterData["TriX3"];
-  let triangleY3 = letterData["TriY3"]
+  let triangleY3 = letterData["TriY3"];
 
+//----------------------Draw Shapes
 
+//draw rectangle
   noStroke();
   fill(66,135,245,75);
-    rect(RectX,RectY,RectWidth,RectLength);
+  rect(RectX,RectY,RectWidth,RectLength);
   
+//MAIN RECTANGLE
   fill(RectColour1)
-   rect(RectX+5,RectY+5,RectWidth,RectLength);
+  rect(RectX+5,RectY+5,RectWidth,RectLength);
  
-   noStroke();
-   fill(68, 92, 71, 75);
-     triangle(triangleX1,triangleY1,triangleX2,triangleY2,triangleX3,triangleY3);
-   
-     fill(TriangleColour1);
-     triangle(triangleX1+5,triangleY1+5,triangleX2+5,triangleY2+5,triangleX3+5,triangleY3+5);
-     
 
 
-   stroke(252, 224, 144);
-   strokeWeight(10);
-   noFill();
-     arc(ArcX,ArcY,ArcWidth,ArcLength,ArcStart,ArcEnd);
+//draw arc
+  stroke(252, 224, 144);
+  strokeWeight(10);
+  noFill();
+  arc(ArcX,ArcY,ArcWidth,ArcLength,ArcStart,ArcEnd);
 
-stroke(StrokeColour);
-strokeWeight(10);
-noFill();
+//MAIN ARC
+  stroke(StrokeColour);
+  strokeWeight(10);
+  noFill();
   arc(ArcX+5,ArcY+5,ArcWidth,ArcLength,ArcStart,ArcEnd);
 
 
 
-
-noStroke();
-fill(68, 92, 71, 75);
+//draw triangle
+  noStroke();
+  fill(68, 92, 71, 75);
   triangle(triangleX1,triangleY1,triangleX2,triangleY2,triangleX3,triangleY3);
 
+//MAIN TRIANGLE
   fill(TriangleColour1);
   triangle(triangleX1+5,triangleY1+5,triangleX2+5,triangleY2+5,triangleX3+5,triangleY3+5);
   
-//   //second line parameters
-//   let LineTwox1 = letterData["LineTwox1"];
-//   let LineTwox2 = letterData["LineTwox2"];
-//   let LineTwoy1 = letterData["LineTwoy1"];
-//   let LineTwoy2 = letterData["LineTwoy2"];
-
-//  //third line parameters
-//   let LineThreex1 = letterData["LineThreex1"];
-//   let LineThreex2 = letterData["LineThreex2"];
-//   let LineThreey1 = letterData["LineThreey1"];
-//   let LineThreey2 = letterData["LineThreey2"];
-
-//  //Pencil parameters
-//  let pencilY = letterData["pencilY"];
-//  let pencilRotation = letterData["pencilRotation"];
-
-//  //arc parameters
-//  let arcStart = letterData["arcStart"];
-//  let arcEnd = letterData["arcEnd"];
-//  let arcSize = letterData["arcSize"];
-//  let arcAmount = letterData["arcAmount"];
-
-//   stroke(PencilColour);
-//   strokeWeight(4);
-//   line(LineOnex1, LineOnex2, LineOney1, LineOney2);
-//   line(LineTwox1, LineTwox2, LineTwoy1, LineTwoy2);
-//   line(LineThreex1, LineThreex2, LineThreey1, LineThreey2);
-
-//   push()
-//   translate(100,10);
-//   rotate(90);
-//   noFill();
-//   if(arcAmount <= 50){
-//     arc(75, 50, 100, arcSize, arcStart, arcEnd);
-//    } else{
-//     arc(75, 100, arcSize, 100, arcStart, arcEnd);
-//     arc(75, 50, 100, arcSize, arcStart, arcEnd);
-//    }
-//    pop()
-// //if parameters hit a certain value, the pencil area will change
-//   // if(LineOnex1 <= 50){
-//     push()
-//     beginShape()
-//     translate(10,2),
-//     rotate(pencilRotation);
-//     translate(10,2),
-    
-//     noStroke()
-//     fill("#f7e8c1");
-//     triangle(10, 47, 18, 20, 25, 47);
-//     fill(PencilColour);
-//     triangle(14.9, 30, 18, 20, 20.7, 30);
-//     noStroke()
-//     fill(yellow);
-//     rect(10,50,15,107,0,0,2,2);
-//     fill(SecondaryColour);
-//     rect(10,150,15,17,0,0,2,2);
-//     fill(PencilColour);
-//     rect(10,150,15,5);
-//     noStroke()
-//     fill(yellow);
-//     rect(10, 45, 4.6, 10, 20, 15, 10, 5);
-//     rect(16, 43, 4.6, 10, 20, 15, 10, 5);
-//     rect(20.5, 45, 4.6, 50, 5, 5, 10, 5);
-//     stroke(PencilColour);
-//     strokeWeight(1.5);
-//     line(15,46,15,150);
-//     line(21,46,21,150);
-//     endShape()
-//     pop()
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
@@ -178,7 +108,7 @@ function interpolate_letter(percent, oldObj, newObj) {
 var swapWords = [
   "PICASSO?",
   "ARTISTIC",
-  "BAEKFAEK"
+  "?CANVAS?"
 ]
 
 
