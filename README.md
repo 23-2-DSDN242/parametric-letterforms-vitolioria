@@ -4,10 +4,7 @@
 <img width="952" alt="preview" src="https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/8e2f7091-9803-4485-ab8a-ab92f9ea4f69">
 
 
-
-
-
-(Replace this README with information about your alphabet. This is an example.)
+[Initial sketch and assignment understanding]
 
 Each of my letters is composed with two circles. The size and position of the first circle is fixed, but the location and size of the second circle is controlled by three parameters.
 
@@ -26,4 +23,3 @@ Tried to add a colour parameter but the letters only show up as different shades
 
 ![Screenshot 2024-03-27 234802](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/e864ae86-ceec-4c6d-bfc7-9970535bb2e2)
 ![Screenshot 2024-04-27 221420](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/21815e50-6833-4567-add7-3599a2d6e534)
-![dsdsdsdsdsds](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/a6378da6-d3b1-4399-894a-217a0fb1af95)
