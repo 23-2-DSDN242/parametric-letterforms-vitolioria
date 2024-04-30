@@ -2,17 +2,18 @@
 
 ### PicassoFont by Oriana Vitolio
 
-[Final Alphabet font]
+**Final Alphabet font**
+
 <img width="952" alt="preview" src="https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/8e2f7091-9803-4485-ab8a-ab92f9ea4f69">
 
 For this assignment, I played around with different ideas and especially was experimenting with different shapes. As seen in the image above, the theme I ended up going with was a more abstract look and was heavily inspired by the artist Picasso (hence the typeface name). 
 
-Final parameters used:
- * `RectX`  * `RectY`  * `RectWidth`  * `RectLength` : Rectangle shape and size parameters.
- * `ArcX`  * `ArcY`  * `ArcWidth`  * `ArcLength`  * `ArcStart`  * `ArcEnd`: Arc shape and size parameters.
- * `TriX1` * `TriY1` * `TriX2`  * `TriY2`  * `TriX3`  * `TriY3`: Triangle shape and size parameters.
+**Final parameters used:**
+ * `RectX` `RectY` `RectWidth` `RectLength`: Rectangle shape and size parameters.
+ * `ArcX` `ArcY` `ArcWidth` `ArcLength` `ArcStart` `ArcEnd`: Arc shape and size parameters.
+ * `TriX1` `TriY1` `TriX2` `TriY2` `TriX3` `TriY3`: Triangle shape and size parameters.
    
-[Initial sketch and assignment understanding]
+**Initial sketch and assignment understanding**
 
 Each of my letters is composed with two circles. The size and position of the first circle is fixed, but the location and size of the second circle is controlled by three parameters.
 
