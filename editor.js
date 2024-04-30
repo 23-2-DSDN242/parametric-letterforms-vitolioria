@@ -24,41 +24,7 @@ const sliderInfo = [
   ["TriY2",0,200],
   ["TriX3",0,200],
   ["TriY3",0,200],
-
-  
-  // ["colourChange",0,3],
-  // ["shapeOrder",0,2],
-
-
-
-
-  // ["LineOnex1",0,200],
-  // ["LineOnex2",0,200],
-  // ["LineOney1",0,200],
-  // ["LineOney2",0,200],
-  // ["LineTwox1",0,200],
-  // ["LineTwox2",0,200],
-  // ["LineTwoy1",0,200],
-  // ["LineTwoy2",0,200],
-  // ["LineThreex1",0,200],
-  // ["LineThreex2",0,200],
-  // ["LineThreey1",0,200],
-  // ["LineThreey2",0,200],
-  // ["arcStart",0,400],
-  // ["arcEnd",0,400],
-  // ["arcSize",0,200],
-  // ["arcAmount",0,100],
-  // ["pencilY",0,100],
-  // ["pencilRotation",-360,360],
-  
-  
-  // ["triWidth1", 0, 150],
-  // ["triLength1",0, 150],
-  // ["triX1",  -50,  50],
-  // ["triY1", -100, 50],
- 
-
-];
+  ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
 
