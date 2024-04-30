@@ -32,8 +32,9 @@ The three parameters per letter:
  * `radius` : radius of rectangle corners
 
 Tried to add a colour parameter but the letters only show up as different shades of white - [EDIT] because the parameter does not use simple numbers, I opted to having the set colours in the draw_letters.js 
-![Screenshot 2024-03-27 234802](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/e864ae86-ceec-4c6d-bfc7-9970535bb2e2)
+
 ![colour mddn242](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/805ed967-7088-4127-9da0-56144fcfd904)
+![Screenshot 2024-03-27 234802](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/e864ae86-ceec-4c6d-bfc7-9970535bb2e2)
 
 My initial idea was inspired by the lines that were already in the code (debug lines). It reminded me of doing handwriting practice while in primary and so went on with this inspiration. I created a pencil using all sorts of shapes - this would be used as the left side (or main stem) of the letter- and planned on using grey lines to draw out the rest of the letter shape. I did end up struggling due to having trouble with pencil parameters not working and also found that I wasn't committed to the look. This ultimately made me change my design ideas.
 
