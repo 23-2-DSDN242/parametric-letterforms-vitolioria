@@ -1,6 +1,12 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/xQz3oEP8)
 ## MDDN 242 2024 Assignment 2
 
+<img width="952" alt="preview" src="https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/8e2f7091-9803-4485-ab8a-ab92f9ea4f69">
+
+
+
+
+
 (Replace this README with information about your alphabet. This is an example.)
 
 Each of my letters is composed with two circles. The size and position of the first circle is fixed, but the location and size of the second circle is controlled by three parameters.
