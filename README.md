@@ -13,7 +13,8 @@ For this assignment, I played around with different ideas and especially was exp
  * `ArcX` `ArcY` `ArcWidth` `ArcLength` `ArcStart` `ArcEnd`: Arc shape and size parameters.
  * `TriX1` `TriY1` `TriX2` `TriY2` `TriX3` `TriY3`: Triangle shape and size parameters.
 
-![IMG_0290](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/939d5997-2d93-4a1f-a67c-708de1e4fd59)
+**Initial sketch for final font**
+![IMG_0290](https://github.com/23-2-DSDN242/parametric-letterforms-vitolioria/assets/147349823/939d5997-2d93-4a1f-a67c-708de1e4fd59|width=100)
 
 
 ---
