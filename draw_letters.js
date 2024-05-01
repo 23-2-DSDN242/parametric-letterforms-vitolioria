@@ -9,24 +9,18 @@ const ArcStrokeColour = "#4287f5";
 const RectColour = "#fe5e41";
 const TriangleColour ="#ffb2e6"; 
 
-/*
- * Draw the letter given the letterData
- *
- * Letters should always be drawn with the
- * following bounding box guideline:
- * from (0,0) to (100, 200)
- */
+//allows shapes to be drawn
 function drawLetter(letterData) {
   angleMode(DEGREES);
 
  
-  //rect parameters
+  //rect size and placement parameters
   let RectX = letterData["RectX"];
   let RectY = letterData["RectY"];
   let RectWidth = letterData["RectWidth"];
   let RectLength = letterData["RectLength"];
 
-  //arc parameters
+  //arc size, end and placement parameters
   let ArcX = letterData["ArcX"];
   let ArcY = letterData["ArcY"];
   let ArcWidth = letterData["ArcWidth"];
@@ -34,7 +28,7 @@ function drawLetter(letterData) {
   let ArcStart = letterData["ArcStart"];
   let ArcEnd = letterData["ArcEnd"];
 
-  //triangle parameters
+  //triangle point and placement parameters
   let triangleX1 = letterData["TriX1"];
   let triangleY1 = letterData["TriY1"];
   let triangleX2 = letterData["TriX2"];
@@ -42,9 +36,10 @@ function drawLetter(letterData) {
   let triangleX3 = letterData["TriX3"];
   let triangleY3 = letterData["TriY3"];
 
-//----------------------Draw Shapes and colours
 
-//draw rectangle
+//Draw Shapes and colours
+
+//draw background rectangle placement and colour 
   noStroke();
   fill(66,135,245,75);
   rect(RectX,RectY,RectWidth,RectLength);
@@ -54,31 +49,31 @@ function drawLetter(letterData) {
   rect(RectX+5,RectY+5,RectWidth,RectLength);
  
 
-//draw arc
+//draw background arc placement and colour 
   stroke(252, 224, 144);
   strokeWeight(10);
   noFill();
   arc(ArcX,ArcY,ArcWidth,ArcLength,ArcStart,ArcEnd);
 
-//MAIN ARC
+//MAIN ARC placement and colour 
   stroke(ArcStrokeColour);
   strokeWeight(10);
   noFill();
   arc(ArcX+5,ArcY+5,ArcWidth,ArcLength,ArcStart,ArcEnd);
 
 
-//draw triangle
+//draw background triangle placement and colour 
   noStroke();
   fill(68, 92, 71, 75);
   triangle(triangleX1,triangleY1,triangleX2,triangleY2,triangleX3,triangleY3);
 
-//MAIN TRIANGLE
+//MAIN TRIANGLE placement and colour 
   fill(TriangleColour);
   triangle(triangleX1+5,triangleY1+5,triangleX2+5,triangleY2+5,triangleX3+5,triangleY3+5);
   
 }
 
-//allows letters to transition smoothly between each other
+//allows letters to transition and morph smoothly between each other
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
   new_letter["RectX"]    = map(percent, 0, 100, oldObj["RectX"], newObj["RectX"]);
@@ -103,6 +98,7 @@ function interpolate_letter(percent, oldObj, newObj) {
   return new_letter;
 }
 
+//chose words that relate to the font theme
 var swapWords = [
   "PICASSO?",
   "ARTISTIC",

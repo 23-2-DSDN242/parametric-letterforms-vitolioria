@@ -5,7 +5,6 @@ const alphabet = {
     "RectY": 88,
     "RectWidth": 14.000000000000002,
     "RectLength": 52,
-
     //arc parameters
     "ArcX": 48,
     "ArcY": 70.99999999999997,
@@ -13,7 +12,6 @@ const alphabet = {
     "ArcLength": 67,
     "ArcStart": 201.60000000000002,
     "ArcEnd": 97.2,
-
     //triangle parameters
     "TriX1": 24,
     "TriY1": 150,
@@ -23,6 +21,7 @@ const alphabet = {
     "TriY3": 184
   },
   "A": {
+    //rect parameters
     "RectX": 64,
     "RectY": 44,
     "RectWidth": 22,
@@ -33,6 +32,7 @@ const alphabet = {
     "ArcLength": 61,
     "ArcStart": 54,
     "ArcEnd": 313.2,
+    //triangle parameters
     "TriX1": 48,
     "TriY1": 70,
     "TriX2": 62,
@@ -45,12 +45,14 @@ const alphabet = {
   "RectY": 24.00000000000003,
   "RectWidth": 74,
   "RectLength": 148,
+  //arc parameters
   "ArcX": 50,
   "ArcY": 122,
   "ArcWidth": 55.00000000000001,
   "ArcLength": 62,
   "ArcStart": 226.8,
   "ArcEnd": 129.6,
+  //triangle parameters
   "TriX1": 20,
   "TriY1": 134,
   "TriX2": 20,
